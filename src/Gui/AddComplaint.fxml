@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="370.0" prefWidth="1100.0" style="-fx-background-color: #ffffff;" stylesheets="@../Style.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.AddComplaintController">
+   <children>
+      <Label layoutX="142.0" layoutY="20.0" prefHeight="52.0" prefWidth="367.0" text="Décrivez votre rapport" textFill="#ed701b">
+         <font>
+            <Font name="Oswald Regular" size="37.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="subject" focusColor="#ed701b" layoutX="159.0" layoutY="101.0" prefHeight="37.0" prefWidth="646.0" unFocusColor="#333333">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="50.0" layoutY="111.0" text="* Subject :">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="191.0" text="* Description :">
+         <font>
+            <Font name="Oswald Medium" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextArea fx:id="description" layoutX="159.0" layoutY="179.0" prefHeight="142.0" prefWidth="646.0" />
+      <Button layoutX="965.0" layoutY="295.0" mnemonicParsing="false" onAction="#submitComplaint" prefHeight="52.0" prefWidth="108.0" styleClass="tak-btn" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Oswald Medium" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
